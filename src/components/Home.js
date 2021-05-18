@@ -18,6 +18,7 @@ function Home() {
       checked: false,
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     })
+    setTodo("")
   }
   
   const logout = () => {
