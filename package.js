@@ -26,18 +26,18 @@ SystemJS.config({
     // 'moment': '../node_modules/moment/moment.min.js',
     
     //production
-    'plugin-babel': 'node_modules/babel/plugin-babel.js',
-    'systemjs-babel-build': 'node_modules/systemjs/systemjs-babel-browser.js',
-    'react': 'node_modules/react/react.production.min.js',
-    'react-dom': 'node_modules/react-dom/react-dom.production.min.js',
-    'react-router-dom': 'node_modules/react-router-dom/react-router-dom.min.js',
-    'css': 'node_modules/css/css.js',
-    'material-ui': 'node_modules/material-ui/material-ui.production.min.js',
-    'firebase': 'node_modules/firebase/firebase.min.js',
-    'moment': 'node_modules/moment/moment.min.js',
+    'plugin-babel': './node_modules/babel/plugin-babel.js',
+    'systemjs-babel-build': './node_modules/systemjs/systemjs-babel-browser.js',
+    'react': './node_modules/react/react.production.min.js',
+    'react-dom': './node_modules/react-dom/react-dom.production.min.js',
+    'react-router-dom': './node_modules/react-router-dom/react-router-dom.min.js',
+    'css': './node_modules/css/css.js',
+    'material-ui': './node_modules/material-ui/material-ui.production.min.js',
+    'firebase': './node_modules/firebase/firebase.min.js',
+    'moment': './node_modules/moment/moment.min.js',
   },
   transpiler: 'plugin-babel'
 });
 
-SystemJS.import('src/index.js')
+SystemJS.import('./src/index.js')
   .catch(console.error.bind(console));
