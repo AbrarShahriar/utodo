@@ -1,0 +1,37 @@
+.home {
+  background: lightgray;
+}
+
+.home header {
+  padding: 10px;
+  background: darkgray;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 7px -5px rgba(0,0,0,0.75);
+  z-index: 1;
+  display: flex;
+  width: 100%;
+}
+
+.home header button {
+  margin: 0 0 0 auto;
+}
+
+.body-input {
+  display: grid;
+  place-items: center;
+  background: pink;
+  box-shadow: 0 0 7px -5px rgba(0,0,0,0.75);
+  padding: 20px 0;
+}
+
+.body-input button {
+  margin: 30px 0 10px 0;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 30px auto;
+}

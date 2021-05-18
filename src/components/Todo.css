@@ -1,0 +1,40 @@
+.todo {
+  padding: 15px;
+  margin-top: 5px;
+  box-shadow: 0 0 7px -3px rgba(0,0,0,0.75);
+  background: #fff;
+  display: flex;
+  border-radius: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.todo div {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-text {
+  font-size: 1rem;
+  margin-bottom: 3px;
+}
+
+.timestamp {
+  font-size: 0.8rem;
+  color: pink;
+}
+
+.delete {
+  margin-left: auto;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: lightgray;
+  display: grid;
+  place-items: center;
+  border: none;
+}
+
+.checked {
+  text-decoration: line-through;
+}

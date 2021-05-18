@@ -1,0 +1,11 @@
+.login {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: lightgray
+}
+
+.login button {
+  width: 200px;
+  border-right: 20px;
+}

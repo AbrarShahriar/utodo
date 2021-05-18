@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>React</title>
+  
+  <style>
+    * {
+      margin: 0
+    }
+  
+    .loading {
+      height: 100vh;
+      display: grid;
+      place-items: center;
+      background: lightgray;
+    }
+    
+    .loader {
+      width: 20px;
+      height: 20px;
+      background: #000;
+    }
+    
+    .box {
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      
+      animation: move-box 1s infinite linear
+    }
+
+        @keyframes move-box {
+      25% {
+        transform: translate(100%, 0)
+      }
+
+      50% {
+        transform: translate(100%,100%)
+      }
+
+      75% {
+        transform: translate(0, 100%)
+      }
+      
+      100% {
+        transform: translate(0,0)
+      }
+    }
+    
+  </style>
+  
+  <!-- React -->
+  <script src="../node_modules/systemjs/system.js"></script>
+  
+</head>
+
+<body>
+  <div id="react-app">
+    <div class="loading">
+      <div class="loader">
+        <div class="box"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Project -->
+  <script src="../package.js"></script>
+</body>
+</html>
