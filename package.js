@@ -39,5 +39,5 @@ SystemJS.config({
   transpiler: 'plugin-babel'
 });
 
-SystemJS.import('../src/index.js')
+SystemJS.import('src/index.js')
   .catch(console.error.bind(console));
